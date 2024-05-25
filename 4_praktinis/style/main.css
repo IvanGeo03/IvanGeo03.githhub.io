@@ -1,0 +1,613 @@
+html, body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #FFF5EB;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+      html {
+          scroll-behavior: auto;
+      }
+  }
+  
+  /* 
+  
+    Header
+  
+  */
+  
+  #header {
+    background-color: #F2BC79;
+    width: 1263px;
+    margin: 0,0,0,0;
+    padding: 0;
+    height: 70px;;
+  }
+  
+  .logo {
+    font-family: "Poetsen One", sans-serif;
+    background-color: #F2BC79;
+    color: #ffffff;
+    width: 28%;
+    float: left;
+    padding: 1em 0;
+  }
+  
+  .logo_1 {
+    background-color: #F2BC79;
+    width: 6%;
+    height: 60px;
+    float: left;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    padding-bottom: 1.03em;
+  }
+
+    .logo h4, .logo p {
+        margin: 0;
+        text-align: left;
+        padding-left: 0;
+    }
+  
+    .logo p {
+        font-size: medium;
+        margin-top: 2px;
+    letter-spacing: 0.05em;
+    }
+
+    .logo h4 {
+        font-size: larger;
+      text-transform: none;
+      letter-spacing: 0.10em;
+    }
+  
+  .navigation {
+    background-color: #F2BC79;
+    float: right;
+    text-align: left;
+    padding-top: 2.16em;
+    padding-bottom: 1.5em;
+    width: 66%;
+  }
+  
+    .navigation a {
+        font-size: 13.5px;
+        color: #ffffff;
+      padding: 0.7em 1.3em;
+      text-decoration: none;
+      letter-spacing: 0.10em;
+    }
+  
+    .navigation a:hover {
+        color:#a86008;
+    }
+  
+  /* 
+  
+    Intro
+  
+  */
+  
+  #intro {
+    animation: fadein 1s ease-in;
+}
+@keyframes fadein
+{
+  0%{
+    opacity:0;
+  }
+  100%
+  {
+    opacity:1;
+  }
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  height: 525px;
+  position: relative;
+ }
+  
+ .slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 52.5s infinite;
+ }
+  
+ .slider .slide:nth-child(1) {
+    background-image: url(../img/bg_img.png);
+    animation-delay: 0s;
+ }
+ 
+ .slider .slide:nth-child(2) {
+    background-image: url(../img/bg_img_1.png);
+    animation-delay: -10.5s;
+ }
+ 
+ .slider .slide:nth-child(3) {
+    background-image: url(../img/bg_img_2.jpg);
+    animation-delay: -21s;
+ }
+ 
+ .slider .slide:nth-child(4) {
+    background-image: url(../img/bg_img_3.jpg);
+    animation-delay: -31.5s;
+ }
+ 
+ .slider .slide:nth-child(5) {
+    background-image: url(../img/bg_img_4.jpg);
+    animation-delay: -42s;
+ }
+ 
+ @keyframes slider {
+  0%, 19%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  99% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+ }
+
+ .slider{
+  filter: brightness(75%);
+ }
+
+  /* 
+    Stilius skirtas mygtukams
+  */
+  
+  .btn-default {
+    border: 2px solid #c77209;
+    background-color: #c77209;
+    filter: drop-shadow(0 0 0.75rem #cb7d1f);
+  }
+  
+    .btn-default:hover {
+    background-color: #a8600847;
+    filter: drop-shadow(0 0 0rem #cb7d1f);
+    }
+
+   #intro {
+      text-align: center;
+      color: #fff;
+    }
+
+    .intro-text h1 {
+      margin: 0;
+      font-size: 4.5em;
+      padding-top: 2.7em;
+      position: absolute;
+      top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    .intro-text p {
+      margin: 0;
+      font-size: 1.5em;
+      position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+  
+   
+
+  .intro-social {
+    text-align: center;
+    color: #fff;
+    padding-top: 12.3em;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .intro-icon {
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 0.6em;
+    color: #fff;
+    
+  }
+  
+    .intro-icon:hover {
+      color: rgb(196, 196, 196)
+    }
+  
+  
+
+  
+  hr {
+    width: 400px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #c77209;
+    background-color: #c77209;
+    border: 0px;
+    height: 1.5px;
+    background-image: linear-gradient(to right, #F2BC79, #c77209, #F2BC79);
+}
+
+ /* 
+  
+    Apie
+  
+  */
+
+#apie{
+  width: 100%;
+  height: 400px;
+}
+  .apie-text {
+  text-align: justify;
+  float: left;
+  width: 45%;
+  line-height: 1.5;
+  margin-left: 5em;
+  }
+
+  .apie-text p{
+    padding-top: 0em;
+    text-indent: 1cm;
+    margin: 0;
+  }
+
+  .apie-text h3{
+    font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+  }
+
+.apie-img{
+float: right;
+width: 35%;
+height: 300px;
+background-image: url(../img/apie_img.jpg);
+background-size: cover;
+margin-top: 4em;
+margin-right: 5.5em;
+border: 5px solid #da9c52;
+box-shadow: 10px 10px 5px rgb(214, 218, 218);
+border-radius: 4%;
+}
+
+  #gamta {
+    padding-top: 0.1em;
+    clear: both;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #gamta h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  #gamta p{
+    text-indent: 1cm;
+    padding: 0;
+    margin: 0;
+  }
+
+  .iframe-map iframe {
+    margin-top: 1em;
+    width: 100%;
+    height: 500px;
+    position: center;
+    border: 0;
+    box-shadow: 10px 10px 10px 5px rgb(214, 218, 218);
+    border-radius: 2%;
+  }
+
+
+#statyba {
+  padding-top: 0.1em;
+  clear: both;
+  text-align: justify;
+  line-height: 1.5;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#statyba iframe{
+  margin-top: 1em;
+  width: 100%;
+  height: 500px;
+  position: center;
+  border: 0;
+  box-shadow: 10px 10px 10px 5px rgb(214, 218, 218);
+  border-radius: 2%;
+}
+
+#statyba h3{
+  font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#statyba p{
+  text-indent: 1cm;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  margin: 0.3em;
+}
+
+#infrastruktura {
+  padding-top: 0.1em;
+  clear: both;
+  text-align: justify;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#infrastruktura iframe{
+  margin-top: 1em;
+  width: 100%;
+  height: 500px;
+  position: center;
+  border: 0;
+  box-shadow: 10px 10px 10px 5px rgb(214, 218, 218);
+  border-radius: 2%;
+}
+
+.infrastruktura_p p{
+  margin: 0;
+}
+
+#infrastruktura h3{
+  font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.infrastruktura_p{
+  text-indent: 1cm;
+  padding-top: 0em;
+  float: left;
+  width: 83%;
+  line-height: 1.5;
+}
+
+.navigation_infr{
+  float: right;
+  text-align: center;
+  width: 15%;
+  padding: 0;
+  margin-top: 3%;
+}
+
+.navigation_infr a {
+  font-size: 15px;
+  color: #ffffff;
+padding: 0.7em 1.3em;
+text-decoration: none;
+letter-spacing: 0.10em;
+}
+
+.navigation_infr a:hover {
+  color:#a86008;
+}
+
+.back-to-top {
+  --offset: -22cm;
+  margin-top: calc(100vh + var(--offset));
+	position: sticky;
+  float: right;
+	bottom: 20px;
+	right: 6px;
+  display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Comfortaa", sans-serif;
+  color: #fff;
+  background: #a09c9cd3;
+  border-radius: 50px;
+  white-space: nowrap;
+	transition: 0.2s ease-out;
+  font-size: 1.5em;
+}
+
+.back-to-top span:hover {
+	background:#da9c52;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+
+  #footer {
+    width: 100%;
+    height:4cm;
+    margin-top: 0.5cm;
+    background-color: #F2BC79;
+  }
+
+  .footer_logo_1 {
+    background-color: #F2BC79;
+    width: 9%;
+    height: 100px;
+    float: left;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    margin-top: 0.2em;
+    padding-right: 0.5cm;
+  }
+
+  .footer_logo{
+    font-family: "Poetsen One", sans-serif;
+    background-color: #F2BC79;
+    color: #ffffff;
+    width: 25%;
+    float: left;
+    border-right: 2px solid #c77209;
+    height: 2cm;
+    margin-top: 1cm;
+  }
+
+  .footer_logo p {
+    font-size: medium;
+  margin: 0;
+  letter-spacing: 0.05em;
+  }
+
+  .footer_logo h4 {
+    font-size: larger;
+  letter-spacing: 0.10em;
+  margin: 0;
+  margin-top: 0.3cm;
+  }
+
+  .footer-content_2 {
+    width: 32%;
+    float:inline-start;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+    border-right: 2px solid #c77209;
+    height: 2cm;
+    margin-top: 1cm;
+  }
+
+  .footer-content_2 p{
+    margin: 0;
+    margin-top: 0.25cm;
+  }
+    
+  .footer-content_3 {
+    width: 30%;
+    float:right;
+    color: #ffffff;
+    font-size: 0.8em;
+    height: 2cm;
+    text-align: center;
+    margin: 0;
+    margin-top: 1cm;
+    
+  }
+
+  .footer-content_3 p{
+    margin: 0;
+    margin-top: 0.25cm;
+  }
+
+  #pasiulymai {
+    padding-top: 0.1em;
+    clear: both;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #pasiulymai h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  #pasiulymai p{
+    text-indent: 1cm;
+    padding: 0;
+    margin: 0;
+  }
+
+  #pasiulymai iframe {
+    margin-top: 1em;
+    height: 500px;
+    position: center;
+    border: 0;
+    box-shadow: 10px 10px 10px 5px rgb(214, 218, 218);
+    border-radius: 2%;
+  }
+
+#kontaktai{
+  margin: 0;
+  padding: 0;
+}
+
+.kontaktu_dalis {
+  width: 54%;
+  float: left;
+  margin-bottom: 2em;
+}
+
+.kontaktu_pavadinimas{
+  background-color:#F2BC79;
+  border: 3px solid #da9c52;
+  padding: 1em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 3em;
+  border-radius: 1em;
+}
+
+ .kontaktu_pavadinimas h2{
+  margin: 0;
+  letter-spacing: 0.20em;
+ }
+
+ .kontaktu_turinys{
+  background-color: #F2BC79;
+  border: 3px solid #da9c52;
+  border-radius: 1em;
+  padding: 1em;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 3em;
+ }
+
+ .kontaktu_turinys p{
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+ }
+
+ .iframe-adresas iframe{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+ }
+
+ #forms iframe{
+  width: 40%;
+  float: right;
+  margin-top: 0.6em;
+  margin-right: 3em;
+  margin-bottom: 2em;
+ }
+
+ #main{
+  width: 100%;
+  height: 35.3em;
+ }
